@@ -9,14 +9,18 @@ public class Team {
     private Integer rating;
     private List<Player> players;
     private String faction;
+    private Integer lastGameTime;
 
-    public Team(String name, Integer rating, List<Player> players, String faction) {
+    public Team(String name, Integer rating, List<Player> players, String faction, Integer lastGameTime) {
         this.name = name;
         this.rating = rating;
         this.players = players;
-        this.setFaction(faction);
+        this.faction = faction;
     }
 
+    public Team() {
+
+    }
     public String getName() {
         return name;
     }

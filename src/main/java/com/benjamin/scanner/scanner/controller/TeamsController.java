@@ -4,6 +4,7 @@ import com.benjamin.scanner.scanner.dao.team.Team;
 import com.benjamin.scanner.scanner.service.TeamService;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -17,7 +18,7 @@ public class TeamsController {
     }
 
     @GetMapping("teams")
-    public List<Team> getTeams(@PathVariable String bracket){
+    public List<Team> getTeams(@RequestParam String bracket) throws IOException {
         return teamService.getTeams(bracket);
     }
 }
