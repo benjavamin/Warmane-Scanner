@@ -5,11 +5,12 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
     android:layout_margin="5dp"
-    app:cardCornerRadius="10dp">
+    app:cardCornerRadius="20dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#D7473B38">
 
         <TextView
             android:id="@+id/teamNameTextView"
@@ -21,7 +22,8 @@
             android:textAppearance="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#FFFFFF"/>
 
         <ImageView
             android:id="@+id/factionIconImageView"
@@ -43,7 +45,8 @@
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/teamNameTextView" />
+            app:layout_constraintTop_toBottomOf="@id/teamNameTextView"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/mmrRatingTextView"
@@ -54,7 +57,8 @@
             android:textSize="18sp"
             android:paddingTop="15dp"
             app:layout_constraintTop_toBottomOf="@id/lastTimePlayed"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#FFFFFF"/>
 
         <ImageView
             android:id="@+id/playerClassIconImageView"
@@ -92,7 +96,8 @@
             android:textSize="20sp"
             android:paddingTop="10dp"
             app:layout_constraintTop_toBottomOf="@id/mmrRatingTextView"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/player2TextView"
@@ -103,7 +108,8 @@
             android:textSize="20sp"
             android:paddingTop="10dp"
             app:layout_constraintTop_toBottomOf="@id/player1TextView"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/player3TextView"
@@ -114,7 +120,8 @@
             android:textSize="20sp"
             android:paddingTop="10dp"
             app:layout_constraintTop_toBottomOf="@id/player2TextView"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#FFFFFF"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
